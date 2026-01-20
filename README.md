@@ -15,6 +15,7 @@ Check out [`slide.pdf`](slide.pdf) to see the example presentation!
 ## Color Scheme
 
 - **Utah Red**: #BE0000 (RGB: 190, 0, 0)
+- Full color palette: [brand.utah.edu/branding/colors](https://brand.utah.edu/branding/colors/)
 
 ## Official Logo Downloads
 
