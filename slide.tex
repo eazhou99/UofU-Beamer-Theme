@@ -5,6 +5,8 @@
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
+\usepackage[normalem]{ulem} % for strikethrough
+\usepackage{xeCJK} % for Chinese characters
 
 \author{Your Name}
 \title{University of Utah Beamer Theme}
@@ -55,8 +57,8 @@
     \begin{itemize}[<+-| alert@+>] % besides alert, you can manually add \pause
         \item Many people use \LaTeX{}, and many universities have their own Beamer themes
         \item For best results, compile with Xe\LaTeX{} or pdf\LaTeX{}
-        \item GitHub project: \url{https://github.com/Trinkle23897/THU-Beamer-Theme}
-        \item This template is based on the original THU Beamer Theme \cite{origin}
+        \item GitHub project: \url{https://github.com/eazhou99/UofU-Beamer-Theme}
+        \item This template is based on the original \href{https://github.com/Trinkle23897/THU-Beamer-Theme}{\color{purple}{THU Beamer Theme}}
     \end{itemize}
 \end{frame}
 
@@ -70,7 +72,8 @@
         \item There are some themes built into \LaTeX{}
         \item Various universities have created their own themes
         \item This template originated from \newline \url{https://www.latexstudio.net/archives/4051.html}
-        \item The original \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin} is no longer available
+        \item The original \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} is no longer available
+        \item Examples by Jiayi Weng (2016--17): \url{https://github.com/Trinkle23897/oi_slides}
     \end{itemize}
 \end{frame}
 
@@ -79,13 +82,14 @@
 
 \subsection{Theme Customization}
 
-\begin{frame}{Differences from Original THU Beamer Theme}
+\begin{frame}{University of Utah Version Modifications}
     \begin{itemize}
-        \item Navigation dots in header are displayed in a single row
-        \item University of Utah red color scheme (\#BE0000)
-        \item Simplified for English presentations
-        \item More features can be found at \url{https://www.latexstudio.net/archives/4051.html}
-        \item Some examples below are adapted from \url{https://tuna.moe/event/2018/latex/}
+        \item Colors based on University of Utah Brand Guidelines \cite{uofucolors}
+        \item University of Utah red (\#BE0000)
+        \item More colors documented in CLAUDE.md for vibe coding convenience
+        \item Logos available at University of Utah Brand website \cite{uofulogo}
+        \item More features can be found at LaTeX Studio \cite{latexstudio}
+        \item Some examples below are adapted from TUNA \cite{tunalatex}
     \end{itemize}
 \end{frame}
 
@@ -206,7 +210,7 @@
 
 \begin{frame}[fragile]{\LaTeX{} Environment Examples}
     \begin{minipage}{0.5\linewidth}
-\begin{lstlisting}[language=TeX]
+\begin{lstlisting}[language=TeX,basicstyle=\scriptsize\ttfamily]
 \begin{itemize}
   \item A \item B
   \item C
@@ -229,7 +233,7 @@
     \medskip
     \pause
     \begin{minipage}{0.5\linewidth}
-\begin{lstlisting}[language=TeX]
+\begin{lstlisting}[language=TeX,basicstyle=\scriptsize\ttfamily]
 \begin{enumerate}
   \item Expert \item Advanced
   \item Beginner
@@ -245,16 +249,17 @@
             \item Advanced
             \item Beginner
             \begin{itemize}
-                \item[n+e] Learning
+                \item[n+e] Learning\footnotemark
             \end{itemize}
         \end{enumerate}
     \end{minipage}
+    \footnotetext{\scriptsize ``n+e'' is a homophone of the original author Jiayi Weng's Chinese name. ``Learning'' is self-deprecation---actually Expert level.}
 \end{frame}
 
 \begin{frame}[fragile]{\LaTeX{} Math Formulas}
     \begin{columns}
         \begin{column}{.55\textwidth}
-\begin{lstlisting}[language=TeX]
+\begin{lstlisting}[language=TeX,basicstyle=\scriptsize\ttfamily]
 $V = \frac{4}{3}\pi r^3$
 
 \[
@@ -286,23 +291,23 @@ $V = \frac{4}{3}\pi r^3$
 \begin{frame}[fragile]
     \begin{columns}
         \column{.6\textwidth}
-\begin{lstlisting}[language=TeX]
-    \begin{table}[htbp]
-      \caption{Numbers and Values}
-      \label{tab:number}
-      \centering
-      \begin{tabular}{cl}
-        \toprule
-        Number & Value \\
-        \midrule
-        1 & 4.0 \\
-        2 & 3.7 \\
-        \bottomrule
-      \end{tabular}
-    \end{table}
-    Equation~(\ref{eq:vsphere})
-    values are shown in
-    Table~\ref{tab:number}.
+\begin{lstlisting}[language=TeX,basicstyle=\scriptsize\ttfamily]
+\begin{table}[htbp]
+  \caption{Numbers and Values}
+  \label{tab:number}
+  \centering
+  \begin{tabular}{cl}
+    \toprule
+    Number & Value \\
+    \midrule
+    1 & 4.0 \\
+    2 & 3.7 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Equation~(\ref{eq:vsphere})
+values are shown in
+Table~\ref{tab:number}.
 \end{lstlisting}
         \column{.4\textwidth}
         \begin{table}[htpb]
@@ -344,11 +349,14 @@ $V = \frac{4}{3}\pi r^3$
 \section{Timeline}
 \begin{frame}
     \begin{itemize}
-        \item Month 1: Complete literature review
-        \item Month 2: Reproduce and evaluate various Beamer themes
-        \item Month 3-4: Customize and refine the theme
-        \item Month 5: Write documentation
+        \item \sout{Month 1: Complete literature review}
+        \item \sout{Month 2: Reproduce and evaluate various Beamer themes}
+        \item \sout{Month 3-4: Customize and refine the theme}
+        \item \sout{Month 5: Write documentation}
     \end{itemize}
+    \vspace{1em}
+    \centering
+    Just one cozy night of vibe coding with Claude Code and voil\`a --- University of Utah edition done!
 \end{frame}
 
 
