@@ -32,11 +32,30 @@ This is a University of Utah Beamer theme for LaTeX presentations.
 - `ref.bib` - Bibliography file
 - `pic/` - Image assets (logo, figures)
 
+## University of Utah Official Brand Colors
+
+**Primary Core Colors** (required for all official branding):
+| Name | HEX | RGB | Usage |
+|------|-----|-----|-------|
+| Utah Red | #BE0000 | 190-0-0 | Primary brand color, must be prioritized |
+| Black | #000000 | 0-0-0 | Secondary element |
+| White | #FFFFFF | 255-255-255 | Secondary element |
+| Zion Cinder Cone | #707271 | 112-114-113 | Secondary element |
+
+**Accent Colors** (max 10% of design, never in logos/marks):
+| Name | HEX | RGB |
+|------|-----|-----|
+| Granite Peak | #708E99 | 117-142-153 |
+| Wasatch Sunrise | #FFB81D | 255-184-29 |
+| Red Rocks | #890000 | 130-0-0 |
+| Mountain Green | #6CC24A | 108-194-74 |
+| Great Salt Lake | #3ABFC0 | 58-191-192 |
+| Salt Flat Grey | #E2E6E6 | 226-230-230 |
+
 **Color definitions in UofU.sty:**
-- `uofu`: #BE0000 (Utah Red) - primary color
-- `uofudark`: #890000 (Dark Red) - used for navigation bar gradient
-- `palette secondary`: 75% uofu + 25% black
-- `palette tertiary/quaternary`: uofudark
+- `utahred` (#BE0000): Primary color for frametitle, footline, structure
+- `redrocks` (#890000): Used for navigation bar gradient (palette tertiary/quaternary)
+- `uofu`/`uofudark`: Aliases for backward compatibility
 
 **Theme features:**
 - Uses `smoothbars` outer theme with custom footer showing author, institute, title, and page numbers

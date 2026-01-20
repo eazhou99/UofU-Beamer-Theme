@@ -36,7 +36,20 @@
 %\useoutertheme{default}
 %\useinnertheme[shadow=true]{rounded}
 
-\xdefinecolor{uofu}{rgb}{0.745,0,0}  %RGB#BE0000 Utah Red
+% === University of Utah Official Brand Colors ===
+% Primary Core Colors (required for all official branding)
+\xdefinecolor{utahred}{rgb}{0.745,0,0}        % #BE0000 - Utah Red (primary)
+\xdefinecolor{zioncindercome}{rgb}{0.439,0.447,0.443}  % #707271 - Zion Cinder Cone
+% Accent Colors (max 10% of design, never in logos)
+\xdefinecolor{redrocks}{rgb}{0.510,0,0}       % #890000 - Red Rocks
+\xdefinecolor{granitepeak}{rgb}{0.459,0.557,0.600}    % #708E99 - Granite Peak
+\xdefinecolor{wasatchsunrise}{rgb}{1,0.722,0.114}     % #FFB81D - Wasatch Sunrise
+\xdefinecolor{mountaingreen}{rgb}{0.424,0.761,0.290}  % #6CC24A - Mountain Green
+\xdefinecolor{greatsaltlake}{rgb}{0.227,0.749,0.753}  % #3ABFC0 - Great Salt Lake
+\xdefinecolor{saltflatgrey}{rgb}{0.886,0.902,0.902}   % #E2E6E6 - Salt Flat Grey
+% Aliases for backward compatibility
+\colorlet{uofu}{utahred}
+\colorlet{uofudark}{redrocks}
 \setbeamercolor{footline}{bg=uofu}
 \setbeamercolor{frametitle}{bg=uofu,fg=white}
 \setbeamercolor{title}{bg=uofu}
@@ -47,8 +60,8 @@
 
 \setbeamercolor{palette primary}{use=structure,fg=white,bg=structure.fg}
 \setbeamercolor{palette secondary}{use=structure,fg=white,bg=structure.fg!75!black}
-\setbeamercolor{palette tertiary}{use=structure,fg=white,bg=structure.fg!50!black}
-\setbeamercolor{palette quaternary}{fg=white,bg=structure.fg!50!black}
+\setbeamercolor{palette tertiary}{use=structure,fg=white,bg=uofudark}
+\setbeamercolor{palette quaternary}{fg=white,bg=uofudark}
 %\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
 \setbeamercolor{titlelike}{parent=palette primary}
 
