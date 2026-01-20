@@ -1,0 +1,49 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 200 240
+%%HiResBoundingBox: 0 0 200 240
+%%Title: University of Utah Block U Logo
+%%Creator: UofU Beamer Theme
+%%CreationDate: 2024
+%%EndComments
+
+% Utah Red color: #BE0000 (RGB: 190, 0, 0)
+/utahred { 0.745 0 0 setrgbcolor } def
+
+% Draw the Block U
+gsave
+  % Fill the outer red rectangle
+  utahred
+  newpath
+  0 0 moveto
+  200 0 lineto
+  200 240 lineto
+  0 240 lineto
+  closepath
+  fill
+
+  % Cut out the white U shape
+  1 1 1 setrgbcolor
+
+  % Draw the U shape (white)
+  newpath
+  % Start at bottom left of the U opening
+  35 35 moveto
+  % Go up the left side
+  35 205 lineto
+  75 205 lineto
+  75 85 lineto
+  % Arc at the bottom of the U
+  100 85 25 180 360 arc
+  % Up the right side
+  125 85 lineto
+  125 205 lineto
+  165 205 lineto
+  165 35 lineto
+  % Bottom arc of the outer U
+  100 35 65 0 180 arcn
+  closepath
+  fill
+
+grestore
+
+%%EOF

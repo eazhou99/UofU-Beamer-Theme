@@ -1,17 +1,17 @@
 \documentclass{beamer}
-\usepackage{ctex, hyperref}
+\usepackage{hyperref}
 \usepackage[T1]{fontenc}
 
 % other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
 
-\author{翁家翌}
-\title{THU Beamer Theme}
-\subtitle{毕业设计开题报告}
-\institute{清华大学计算机科学与技术系}
-\date{2020年1月2日}
-\usepackage{Tsinghua}
+\author{Your Name}
+\title{University of Utah Beamer Theme}
+\subtitle{Presentation Template}
+\institute{University of Utah}
+\date{\today}
+\usepackage{UofU}
 
 % defs
 \def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
@@ -35,12 +35,11 @@
 
 \begin{document}
 
-\kaishu
 \begin{frame}
     \titlepage
     \begin{figure}[htpb]
         \begin{center}
-            \includegraphics[width=0.2\linewidth]{pic/Tsinghua_University_Logo.eps}
+            \includegraphics[width=0.2\linewidth]{pic/UofU_Logo.eps}
         \end{center}
     \end{figure}
 \end{frame}
@@ -50,79 +49,77 @@
 \end{frame}
 
 
-\section{课题背景}
+\section{Background}
 
-\begin{frame}{用Beamer很高大上？}
-    \begin{itemize}[<+-| alert@+>] % 当然，除了alert，手动在里面插 \pause 也行
-        \item 大家都会\LaTeX{}，好多学校都有自己的Beamer主题
-        \item 中文支持请选择 Xe\LaTeX{} 编译选项
-        \item Overleaf项目地址位于 \url{https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb}，可以直接使用
-        \item GitHub项目地址位于 \url{https://github.com/Trinkle23897/THU-Beamer-Theme}，如果有bug或者feature request可以去里面提issue
+\begin{frame}{Why Use Beamer?}
+    \begin{itemize}[<+-| alert@+>] % besides alert, you can manually add \pause
+        \item Many people use \LaTeX{}, and many universities have their own Beamer themes
+        \item For best results, compile with Xe\LaTeX{} or pdf\LaTeX{}
+        \item GitHub project: \url{https://github.com/Trinkle23897/THU-Beamer-Theme}
+        \item This template is based on the original THU Beamer Theme \cite{origin}
     \end{itemize}
 \end{frame}
 
 
-\section{研究现状}
+\section{Related Work}
 
-\subsection{Beamer主题分类}
+\subsection{Beamer Theme Categories}
 
 \begin{frame}
     \begin{itemize}
-        \item 有一些 \LaTeX{} 自带的
-        \item 有一些Tsinghua的
-        \item 本模板来源自 \newline \url{https://www.latexstudio.net/archives/4051.html}
-        \item 但是最初的 \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin}已经失效了
-        \item 这是我在16-17年做的一些ppt：\href{https://github.com/Trinkle23897/oi_slides}{\color{purple}{戳我}}
+        \item There are some themes built into \LaTeX{}
+        \item Various universities have created their own themes
+        \item This template originated from \newline \url{https://www.latexstudio.net/archives/4051.html}
+        \item The original \href{http://far.tooold.cn/post/latex/beamertsinghua}{\color{purple}{link}} \cite{origin} is no longer available
     \end{itemize}
 \end{frame}
 
 
-\section{研究内容}
+\section{Features}
 
-\subsection{美化主题}
+\subsection{Theme Customization}
 
-\begin{frame}{这一份主题与原始的THU Beamer Theme区别在于}
+\begin{frame}{Differences from Original THU Beamer Theme}
     \begin{itemize}
-        \item 顶栏的小点变成一行而不是多行
-        \item 中文采用楷书
-        \item 剩下我改了啥我也忘了……我16年魔改的，都四年过去了（x
-        \item 更多该模板的功能可以参考 \url{https://www.latexstudio.net/archives/4051.html}
-        \item 下面列举出了一些Beamer的用法，部分节选自 \url{https://tuna.moe/event/2018/latex/}
+        \item Navigation dots in header are displayed in a single row
+        \item University of Utah red color scheme (\#BE0000)
+        \item Simplified for English presentations
+        \item More features can be found at \url{https://www.latexstudio.net/archives/4051.html}
+        \item Some examples below are adapted from \url{https://tuna.moe/event/2018/latex/}
     \end{itemize}
 \end{frame}
 
-\subsection{如何更好地做Beamer}
+\subsection{Using Beamer Effectively}
 
 \begin{frame}{Why Beamer}
     \begin{itemize}
-        \item \LaTeX 广泛用于学术界，期刊会议论文模板
+        \item \LaTeX{} is widely used in academia for journal and conference papers
     \end{itemize}
     \begin{table}[h]
         \centering
         \begin{tabular}{c|c}
-            Microsoft\textsuperscript{\textregistered}  Word & \LaTeX \\
+            Microsoft\textsuperscript{\textregistered}  Word & \LaTeX{} \\
             \hline
-            文字处理工具 & 专业排版软件 \\
-            容易上手，简单直观 & 容易上手 \\
-            所见即所得 & 所见即所想，所想即所得 \\
-            高级功能不易掌握 & 进阶难，但一般用不到 \\
-            处理长文档需要丰富经验 & 和短文档处理基本无异 \\
-            花费大量时间调格式 & 无需担心格式，专心作者内容 \\
-            公式排版差强人意 & 尤其擅长公式排版 \\
-            二进制格式，兼容性差 & 文本文件，易读、稳定 \\
-            付费商业许可 & 自由免费使用 \\
+            Word processor & Professional typesetting \\
+            Easy to learn, intuitive & Easy to start \\
+            WYSIWYG & What you think is what you get \\
+            Advanced features hard to master & Advanced features rarely needed \\
+            Long documents require experience & Same workflow for any length \\
+            Spend time on formatting & Focus on content \\
+            Equation typesetting is mediocre & Excellent equation typesetting \\
+            Binary format, compatibility issues & Text files, readable, stable \\
+            Paid commercial license & Free and open source \\
         \end{tabular}
     \end{table}
 \end{frame}
 
-\begin{frame}{排版举例}
-    \begin{exampleblock}{无编号公式} % 加 * 
+\begin{frame}{Math Examples}
+    \begin{exampleblock}{Unnumbered Equation}
         \begin{equation*}
             J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
         \end{equation*}
     \end{exampleblock}
-    \begin{exampleblock}{多行多列公式\footnote{如果公式中有文字出现，请用 $\backslash$mathrm\{\} 或者 $\backslash$text\{\} 包含，不然就会变成 $clip$，在公式里看起来比 $\mathrm{clip}$ 丑非常多。}}
-        % 使用 & 分隔
+    \begin{exampleblock}{Multi-line Equation\footnote{If text appears in equations, use $\backslash$mathrm\{\} or $\backslash$text\{\}, otherwise it looks like $clip$ instead of $\mathrm{clip}$.}}
         \begin{align}
             Q_\mathrm{target}&=r+\gamma Q^\pi(s^\prime, \pi_\theta(s^\prime)+\epsilon)\\
             \epsilon&\sim\mathrm{clip}(\mathcal{N}(0, \sigma), -c, c)\nonumber
@@ -131,7 +128,7 @@
 \end{frame}
 
 \begin{frame}
-    \begin{exampleblock}{编号多行公式}
+    \begin{exampleblock}{Numbered Multi-line Equation}
         % Taken from Mathmode.tex
         \begin{multline}
             A=\lim_{n\rightarrow\infty}\Delta x\left(a^{2}+\left(a^{2}+2a\Delta x+\left(\Delta x\right)^{2}\right)\right.\label{eq:reset}\\
@@ -144,7 +141,7 @@
     \end{exampleblock}
 \end{frame}
 
-\begin{frame}{图形与分栏}
+\begin{frame}{Figures and Columns}
     % From thuthesis user guide.
     \begin{minipage}[c]{0.3\linewidth}
         \psset{unit=0.8cm}
@@ -180,34 +177,34 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}[fragile]{\LaTeX{} 常用命令}
-    \begin{exampleblock}{命令}
+\begin{frame}[fragile]{\LaTeX{} Common Commands}
+    \begin{exampleblock}{Commands}
         \centering
         \footnotesize
         \begin{tabular}{llll}
             \cmd{chapter} & \cmd{section} & \cmd{subsection} & \cmd{paragraph} \\
-            章 & 节 & 小节 & 带题头段落 \\\hline
+            Chapter & Section & Subsection & Paragraph \\\hline
             \cmd{centering} & \cmd{emph} & \cmd{verb} & \cmd{url} \\
-            居中对齐 & 强调 & 原样输出 & 超链接 \\\hline
+            Center align & Emphasize & Verbatim & Hyperlink \\\hline
             \cmd{footnote} & \cmd{item} & \cmd{caption} & \cmd{includegraphics} \\
-            脚注 & 列表条目 & 标题 & 插入图片 \\\hline
+            Footnote & List item & Caption & Insert image \\\hline
             \cmd{label} & \cmd{cite} & \cmd{ref} \\
-            标号 & 引用参考文献 & 引用图表公式等\\\hline
+            Label & Cite reference & Cross-reference\\\hline
         \end{tabular}
     \end{exampleblock}
-    \begin{exampleblock}{环境}
+    \begin{exampleblock}{Environments}
         \centering
         \footnotesize
         \begin{tabular}{lll}
             \env{table} & \env{figure} & \env{equation}\\
-            表格 & 图片 & 公式 \\\hline
+            Table & Figure & Equation \\\hline
             \env{itemize} & \env{enumerate} & \env{description}\\
-            无编号列表 & 编号列表 & 描述 \\\hline
+            Bulleted list & Numbered list & Description list \\\hline
         \end{tabular}
     \end{exampleblock}
 \end{frame}
 
-\begin{frame}[fragile]{\LaTeX{} 环境命令举例}
+\begin{frame}[fragile]{\LaTeX{} Environment Examples}
     \begin{minipage}{0.5\linewidth}
 \begin{lstlisting}[language=TeX]
 \begin{itemize}
@@ -234,27 +231,27 @@
     \begin{minipage}{0.5\linewidth}
 \begin{lstlisting}[language=TeX]
 \begin{enumerate}
-  \item 巨佬 \item 大佬
-  \item 萌新
+  \item Expert \item Advanced
+  \item Beginner
   \begin{itemize}
-    \item[n+e] 瑟瑟发抖
+    \item[n+e] Learning
   \end{itemize}
 \end{enumerate}
 \end{lstlisting}
     \end{minipage}\hspace{1cm}
     \begin{minipage}{0.3\linewidth}
         \begin{enumerate}
-            \item 巨佬
-            \item 大佬
-            \item 萌新
+            \item Expert
+            \item Advanced
+            \item Beginner
             \begin{itemize}
-                \item[n+e] 瑟瑟发抖
+                \item[n+e] Learning
             \end{itemize}
         \end{enumerate}
     \end{minipage}
 \end{frame}
 
-\begin{frame}[fragile]{\LaTeX{} 数学公式}
+\begin{frame}[fragile]{\LaTeX{} Math Formulas}
     \begin{columns}
         \begin{column}{.55\textwidth}
 \begin{lstlisting}[language=TeX]
@@ -282,7 +279,7 @@ $V = \frac{4}{3}\pi r^3$
         \end{column}
     \end{columns}
     \begin{itemize}
-        \item 更多内容请看 \href{https://zh.wikipedia.org/wiki/Help:数学公式}{\color{purple}{这里}}
+        \item More information: \href{https://en.wikibooks.org/wiki/LaTeX/Mathematics}{\color{purple}{LaTeX Math Guide}}
     \end{itemize}
 \end{frame}
 
@@ -291,76 +288,76 @@ $V = \frac{4}{3}\pi r^3$
         \column{.6\textwidth}
 \begin{lstlisting}[language=TeX]
     \begin{table}[htbp]
-      \caption{编号与含义}
+      \caption{Numbers and Values}
       \label{tab:number}
       \centering
       \begin{tabular}{cl}
         \toprule
-        编号 & 含义 \\
+        Number & Value \\
         \midrule
         1 & 4.0 \\
         2 & 3.7 \\
         \bottomrule
       \end{tabular}
     \end{table}
-    公式~(\ref{eq:vsphere}) 的
-    编号与含义请参见
-    表~\ref{tab:number}。
+    Equation~(\ref{eq:vsphere})
+    values are shown in
+    Table~\ref{tab:number}.
 \end{lstlisting}
         \column{.4\textwidth}
         \begin{table}[htpb]
             \centering
-            \caption{编号与含义}
+            \caption{Numbers and Values}
             \label{tab:number}
             \begin{tabular}{cl}\toprule
-                编号 & 含义 \\\midrule
+                Number & Value \\\midrule
                 1 & 4.0\\
                 2 & 3.7\\\bottomrule
             \end{tabular}
         \end{table}
-        \normalsize 公式~(\ref{eq:vsphere})的编号与含义请参见表~\ref{tab:number}。
+        \normalsize Equation~(\ref{eq:vsphere}) values are shown in Table~\ref{tab:number}.
     \end{columns}
 \end{frame}
 
-\begin{frame}{作图}
+\begin{frame}{Graphics}
     \begin{itemize}
-        \item 矢量图 eps, ps, pdf
+        \item Vector graphics: eps, ps, pdf
         \begin{itemize}
             \item METAPOST, pstricks, pgf $\ldots$
             \item Xfig, Dia, Visio, Inkscape $\ldots$
-            \item Matlab / Excel 等保存为 pdf
+            \item Matlab / Excel can export to pdf
         \end{itemize}
-        \item 标量图 png, jpg, tiff $\ldots$
+        \item Raster graphics: png, jpg, tiff $\ldots$
         \begin{itemize}
-            \item 提高清晰度，避免发虚
-            \item 应尽量避免使用
+            \item Use high resolution to avoid blurriness
+            \item Should be avoided when possible
         \end{itemize}
     \end{itemize}
     \begin{figure}[htpb]
         \centering
-        \includegraphics[width=0.2\linewidth]{pic/Tsinghua_University_Logo.eps}
-        \caption{这个校徽就是矢量图}
+        \includegraphics[width=0.2\linewidth]{pic/UofU_Logo.eps}
+        \caption{This logo is a vector graphic}
     \end{figure}
 \end{frame}
 
 
-\section{计划进度}
+\section{Timeline}
 \begin{frame}
     \begin{itemize}
-        \item 一月：完成文献调研
-        \item 二月：复现并评测各种Beamer主题美观程度
-        \item 三、四月：美化THU Beamer主题
-        \item 五月：论文撰写
+        \item Month 1: Complete literature review
+        \item Month 2: Reproduce and evaluate various Beamer themes
+        \item Month 3-4: Customize and refine the theme
+        \item Month 5: Write documentation
     \end{itemize}
 \end{frame}
 
 
-\section{参考文献}
+\section{References}
 
 \begin{frame}[allowframebreaks]
     \bibliography{ref}
     \bibliographystyle{alpha}
-    % 如果参考文献太多的话，可以像下面这样调整字体：
+    % If there are too many references, adjust font size:
     % \tiny\bibliographystyle{alpha}
 \end{frame}
 

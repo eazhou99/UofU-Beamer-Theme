@@ -1,9 +1,19 @@
-# THU-Beamer-Theme
+# UofU-Beamer-Theme
 
-最初能追溯到的版本是 [https://www.latexstudio.net/archives/4051.html](https://www.latexstudio.net/archives/4051.html)
+A University of Utah themed Beamer template for LaTeX presentations.
 
-我在16年的时候魔改了一发，20年的时候小修了一下，变成现在这样
+## Usage
 
-Overleaf模板位于：[https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb](https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb)，可以直接点开
+1. Copy `UofU.sty` and `pic/` folder to your project
+2. Add `\usepackage{UofU}` to your document preamble
+3. Compile with pdfLaTeX or XeLaTeX
 
-其中的教程部分参考了大鹰团长的介绍：[https://tuna.moe/event/2018/latex/](https://tuna.moe/event/2018/latex/)
+## Color Scheme
+
+- **Utah Red**: #BE0000 (RGB: 190, 0, 0)
+
+## Attribution
+
+Based on [THU-Beamer-Theme](https://github.com/Trinkle23897/THU-Beamer-Theme)
+
+Original source: https://www.latexstudio.net/archives/4051.html
