@@ -2,6 +2,10 @@
 
 A University of Utah themed Beamer template for LaTeX presentations.
 
+## Preview
+
+Check out [`slide.pdf`](slide.pdf) to see the example presentation!
+
 ## Usage
 
 1. Copy `UofU.sty` and `pic/` folder to your project
@@ -14,6 +18,6 @@ A University of Utah themed Beamer template for LaTeX presentations.
 
 ## Attribution
 
-Based on [THU-Beamer-Theme](https://github.com/Trinkle23897/THU-Beamer-Theme)
+Based on [THU-Beamer-Theme](https://github.com/Trinkle23897/THU-Beamer-Theme). University of Utah version available at [UofU-Beamer-Theme](https://github.com/eazhou99/UofU-Beamer-Theme)
 
 Original source: https://www.latexstudio.net/archives/4051.html
